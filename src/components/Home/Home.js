@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Activites from '../Activites/Activites';
 import './Home.css'
 
 const Home = () => {
+    const [activites, setActivites] = useState([])
+
+    useEffect(()=>{
+        fetch(`activites.json`)
+        .then(res => res.json())
+        .then(data => setActivites(data))
+    },[])
     return (
         <div>
             <div className='home-container'>
