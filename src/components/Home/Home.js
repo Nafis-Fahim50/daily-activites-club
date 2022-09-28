@@ -12,9 +12,9 @@ const Home = () => {
     },[])
     return (
         <div>
-            <div className='home-container'>
+            <div className='home-container mb-16'>
                 <div>
-                <h1 className='text-red-500 font-extrabold mt-10'>Daily Activites Club</h1>
+                <h1 className='text-red-500 font-extrabold mt-10 text-xl'>Daily Activites Club</h1>
                     <Activites
                     activites = {activites}
                     ></Activites>
