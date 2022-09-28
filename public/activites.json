@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Study",
+    "img": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1ZHl8ZW58MHx8MHx8&w=1000&q=80",
+    "time": 7200
+  },
+  {
+    "id": 2,
+    "name": "Programming",
+    "img": "https://www.freecodecamp.org/news/content/images/2021/08/chris-ried-ieic5Tq8YMk-unsplash.jpg",
+    "time": 5400
+  },
+  {
+    "id": 3,
+    "name": "Photography",
+    "img": "https://cdn.pixabay.com/photo/2016/01/09/18/27/camera-1130731__480.jpg",
+    "time": 3600
+  },
+  {
+    "id": 4,
+    "name": "Praying",
+    "img": "https://media.istockphoto.com/photos/religious-asian-muslim-man-holding-holy-quran-picture-id1310856714?b=1&k=20&m=1310856714&s=170667a&w=0&h=aeRqPnlGLZVGAtrbqdZU_nM6tVZKeWT90j4BC5YVAQY=",
+    "time": 2600
+  },
+  {
+    "id": 5,
+    "name": "Content Writing",
+    "img": "https://bestdigitaltrendz.com/wp-content/uploads/2022/08/Content-Writing.jpg",
+    "time": 4500
+  },
+  {
+    "id": 6,
+    "name": "Facebooking",
+    "img": "https://www.androidauthority.com/wp-content/uploads/2015/10/Facebook-reactions.png",
+    "time": 2000
+  },
+  {
+    "id": 7,
+    "name": "Making Tea",
+    "img": "https://rungtatea.in/wp-content/uploads/2014/04/Pic-8_1950204515.main_.jpg?x11062",
+    "time": 900
+  },
+  {
+    "id": 8,
+    "name": "Gaming",
+    "img": "https://www.telekom.de/resources/images/472858/telekom-5g-cloud-gaming-smartphone-s.jpg",
+    "time": 900
+  },
+  {
+    "id": 9,
+    "name": "Watching-Programming-Hero-Class",
+    "img": "https://app.programming-hero.com/thumbnail.png",
+    "time": 900
+  }
+]
