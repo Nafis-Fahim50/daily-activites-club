@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import { useEffect, useState } from 'react';
+import Home from './components/Home/Home';
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Welcome to my daily activites</h1>
+    <div className='container mx-auto'>
+      <Home></Home>
     </div>
   );
 }
