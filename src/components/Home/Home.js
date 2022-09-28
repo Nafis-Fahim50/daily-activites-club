@@ -15,7 +15,9 @@ const Home = () => {
             <div className='home-container'>
                 <div>
                 <h1 className='text-red-500 font-extrabold mt-10'>Daily Activites Club</h1>
-                    <Activites></Activites>
+                    <Activites
+                    activites = {activites}
+                    ></Activites>
                 </div>
                 <div className='bg-white'>
                     This is Cart Section
