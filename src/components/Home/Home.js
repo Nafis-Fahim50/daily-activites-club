@@ -6,7 +6,6 @@ import './Home.css'
 const Home = () => {
     const [activites, setActivites] = useState([])
     const [details, setDetails] = useState([])
-    const [breakTime, setBreakTime] = useState(0)
 
     useEffect(()=>{
         fetch(`activites.json`)
@@ -19,11 +18,6 @@ const Home = () => {
        setDetails(newDetails);
     }
 
-    const handleToGetValue = (e) =>{
-        const value = e.target.value;
-        setBreakTime(value);
-    }
-    
     return (
         <div>
             <div className='home-container mb-16'>
@@ -36,7 +30,7 @@ const Home = () => {
                 </div>
 
                 {/* Details section  */}
-                <div className='bg-white'>
+                <div className='bg-white sticky top-0'>
                     <div className='mt-5 text-center'>
                         <h1 className='font-semibold'>Nafis Fahim</h1>
                         <p>Rajshahi,Bangladesh</p>
@@ -44,9 +38,6 @@ const Home = () => {
                     <ActivityDetails
                     activites = {activites}
                     details = {details}
-                    handleToGetValue = {handleToGetValue}
-                    breakTime = {breakTime}
-
                     ></ActivityDetails>
                 </div>
             </div>

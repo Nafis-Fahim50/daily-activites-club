@@ -2,9 +2,9 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='mb-16'>
-            <h1 className='font-extrabold bg-emerald-500 p-5 m-5'>Simple Question & Answer</h1>
-            <div>
+        <div className='mb-16 sm:ml-12'>
+            <h1 className='font-extrabold bg-emerald-500 p-5 m-5 sm:pl-7'>Simple Question & Answer</h1>
+            <div className='sm:ml-10'>
                 <div className='mb-5'>
                     <h1 className='font-semibold'>1. How Does React Work?</h1>
 
