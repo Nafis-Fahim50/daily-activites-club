@@ -4,10 +4,10 @@ import './Activity.css'
 const Activity = ({activity}) => {
     const {name,img,time} = activity;
     return (
-        <div className='mt-5'>
+        <div className='mt-5 activity-list'>
             <div className=' bg-white rounded-lg'>
-                <div className='rounded-md w-52 ml-11'>
-                    <img src={img} alt="" />
+                <div className='rounded-lg w-52 ml-11 pt-5'>
+                    <img className='activity-img' src={img} alt="" />
                 </div>
                 <div className='ml-5 mt-3'>
                     <h4 className='font-semibold'>{name}</h4>
