@@ -15,9 +15,9 @@ const Blog = () => {
                 <div className='mb-5'>
                     <h1  className='font-semibold'>2. Difference between props vs state</h1>
 
-                    <p><span className='font-medium'>Answer: </span>
+                    <p><span className='font-medium'>Answer: </span></p>
 
-                    <table class="table-fixed border-collapse border border-slate-400">
+                    <table className="table-fixed border-collapse border border-slate-400">
                     <thead>
                         <tr>
                         <th className='border border-slate-400' >Props</th>
@@ -39,7 +39,6 @@ const Blog = () => {
                         </tr>
                     </tbody>
                     </table>
-                    </p>
                 </div>
                 <div className='mb-5'>
                     <h1  className='font-semibold'>3. Uses of useEffect.</h1>

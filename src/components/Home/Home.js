@@ -6,12 +6,18 @@ import './Home.css'
 const Home = () => {
     const [activites, setActivites] = useState([])
     const [details, setDetails] = useState([])
+    
 
     useEffect(()=>{
         fetch(`activites.json`)
         .then(res => res.json())
         .then(data => setActivites(data))
     },[])
+
+    const handleToAddList = (activites) =>{
+       let newDetails = [...details, activites];
+       setDetails(newDetails);
+    }
     return (
         <div>
             <div className='home-container mb-16'>
@@ -19,6 +25,7 @@ const Home = () => {
                 <h1 className='text-red-500 font-extrabold mt-10 text-xl'>Daily Activites Club</h1>
                     <Activites
                     activites = {activites}
+                    handleToAddList = {handleToAddList }
                     ></Activites>
                 </div>
 
@@ -32,6 +39,7 @@ const Home = () => {
                     activites = {activites}
                     details = {details}
                     setDetails = {setDetails}
+
                     ></ActivityDetails>
                 </div>
             </div>

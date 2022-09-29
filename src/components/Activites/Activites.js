@@ -1,7 +1,7 @@
 import React from 'react';
 import Activity from '../Activity/Activity';
 
-const Activites = ({activites}) => {
+const Activites = ({activites,handleToAddList}) => {
     // console.log(activites)
     return (
         <div>
@@ -11,6 +11,7 @@ const Activites = ({activites}) => {
                 activites.map(activity => <Activity
                 key={activity.id}
                 activity ={activity}
+                handleToAddList = {handleToAddList}
                 ></Activity> )
             }
             </div>
