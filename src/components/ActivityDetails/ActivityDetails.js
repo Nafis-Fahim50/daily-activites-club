@@ -13,7 +13,16 @@ const ActivityDetails = ({details}) => {
     const [breakTime, setBreakTime] = useState(0)
     const handleBreakTime = (e) =>{
         setBreakTime(e);
-        // console.log(breakTime);
+    }
+
+    const prevBreakTime = localStorage.getItem('breaktime');
+    const oldBreakTime = JSON.parse(prevBreakTime);
+
+    if(oldBreakTime){
+        localStorage.setItem('breakTime',JSON.stringify([...oldBreakTime, breakTime]));
+    }
+    else{
+        localStorage.setItem('breakTime',JSON.stringify([breakTime]));
     }
     
 
