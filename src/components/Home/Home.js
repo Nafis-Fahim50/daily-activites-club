@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Activites from '../Activites/Activites';
 import ActivityDetails from '../ActivityDetails/ActivityDetails';
+import Image from '../Image/pp.jpg'
 import './Home.css'
 
 const Home = () => {
@@ -32,8 +33,12 @@ const Home = () => {
                 {/* Details section  */}
                 <div className='bg-white sticky top-0'>
                     <div className='mt-5 text-center'>
-                        <h1 className='font-semibold'>Nafis Fahim</h1>
-                        <p>Rajshahi,Bangladesh</p>
+                        <div className='flex ml-16 gap-5'>
+                            <img className='rounded-full w-7' src={Image} alt="" />
+                            <h1 className='font-semibold'>Nafis Fahim</h1>
+                        </div>
+                        <p className='mt-2'>Junior Web Developer</p>
+                        <p>Rajshahi, Bangladesh</p>
                     </div> 
                     <ActivityDetails
                     activites = {activites}

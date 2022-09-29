@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -10,15 +9,6 @@ const ActivityDetails = ({details}) => {
 
     const notify = () => toast("Congratulations! You completed your today's acitivites");
 
-    const [breakTime, SetBreakTime] = useState(0);
-
-    const handleToGetValue = (e) =>{
-        const value = e.target.innerText;
-        SetBreakTime(value)
-    }
-
-    console.log(breakTime);
-
 
     return (
         <div>
@@ -26,7 +16,7 @@ const ActivityDetails = ({details}) => {
             <div className='mt-12  ml-5'>
                 <h1 className='font-bold'>Add a break</h1>
                     <div className='bg-slate-100 mr-5 rounded-lg p-3 mt-3'>
-                        <button onClick={handleToGetValue} className='rounded-full text-black bg-white p-2 ml-3 font-bold'>20s</button>
+                        <button className='rounded-full text-black bg-white p-2 ml-3 font-bold'>20s</button>
                         <button className='rounded-full text-black bg-white p-2 ml-3 font-bold'>30s</button>
                         <button className='rounded-full text-black bg-white p-2 ml-3 font-bold'>40s</button>
                         <button className='rounded-full text-black bg-white p-2 ml-3 font-bold'>50s</button>
@@ -35,7 +25,7 @@ const ActivityDetails = ({details}) => {
                     <div className='mt-12 ml-5'>
                         <h1 className='font-bold'>Activites Details</h1>
                         <div className='mt-5'>
-                            <h1 className='bg-slate-100 py-3 rounded-md mr-5'> <span className='pl-5 font-bold'> Activites Time: {total} </span></h1>
+                            <h1 className='bg-slate-100 py-3 rounded-md mr-5'> <span className='pl-5'> <span className='font-bold'>Activites Time: </span> {total} seconds </span></h1>
                             <h1 className='bg-slate-100 py-3 rounded-md mt-5 mr-5'> <span className='pl-5 font-bold'> Break Time: 0</span></h1>
                         </div>
                     </div>
