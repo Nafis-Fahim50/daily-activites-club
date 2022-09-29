@@ -31,7 +31,7 @@ const Home = () => {
                 </div>
 
                 {/* Details section  */}
-                <div className='bg-white sticky top-0'>
+                <div className='bg-red-500'>
                     <div className='mt-5 text-center'>
                         <div className='flex ml-16 gap-5'>
                             <img className='rounded-full w-7' src={Image} alt="" />

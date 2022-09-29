@@ -3,7 +3,7 @@ import React from 'react';
 const Blog = () => {
     return (
         <div className='mb-16 sm:ml-12'>
-            <h1 className='font-extrabold bg-emerald-500 p-5 m-5 sm:pl-7'>Simple Question & Answer</h1>
+            <h1 className='font-extrabold bg-slate-500 p-5 m-5 sm:pl-7'>Simple Question & Answer</h1>
             <div className='sm:ml-10'>
                 <div className='mb-5'>
                     <h1 className='font-semibold'>1. How Does React Work?</h1>
@@ -20,22 +20,22 @@ const Blog = () => {
                     <table className="table-fixed border-collapse border border-slate-400">
                     <thead>
                         <tr>
-                        <th className='border border-slate-400' >Props</th>
-                        <th className='border border-slate-400'>State</th>
+                        <th className='border border-black' >Props</th>
+                        <th className='border border-black'>State</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                        <td className='border border-slate-400'>Props are read-only.</td>
-                        <td className='border border-slate-400'>State changes can be asynchronous.</td>
+                        <td className='border border-black'>Props are read-only.</td>
+                        <td className='border border-black'>State changes can be asynchronous.</td>
                         </tr>
                         <tr>
-                        <td className='border border-slate-400'>Props are immutable.</td>
-                        <td className='border border-slate-400'>State is mutable.</td>
+                        <td className='border border-black'>Props are immutable.</td>
+                        <td className='border border-black'>State is mutable.</td>
                         </tr>
                         <tr>
-                        <td className='border border-slate-400'>Stateless component can have Props.</td>
-                        <td className='border border-slate-400'>Stateless components cannot have State</td>
+                        <td className='border border-black'>Stateless component can have Props.</td>
+                        <td className='border border-black'>Stateless components cannot have State</td>
                         </tr>
                     </tbody>
                     </table>
